@@ -219,7 +219,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </ul>
           </li>
           <li class="nav-header">Content Management</li>
-            <li class="nav-item menu-open">
+            <li class="nav-item ">
             <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-globe-europe"></i>
               <p>
@@ -236,6 +236,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
               <li class="nav-item">
                 <a href="{{route('cities.index')}}" class="nav-link">
+                  <i class="fas fa-list nav-icon">&nbsp;</i>
+                  <p>Index</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-clone"></i>
+              <p>
+                Categories
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('categories.create')}}" class="nav-link ">
+                  <i class="fas fa-plus-square nav-icon">&nbsp;</i>
+                  <p>Create</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('categories.index')}}" class="nav-link">
                   <i class="fas fa-list nav-icon">&nbsp;</i>
                   <p>Index</p>
                 </a>

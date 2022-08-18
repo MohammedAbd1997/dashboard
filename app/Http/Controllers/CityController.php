@@ -113,5 +113,8 @@ class CityController extends Controller
     public function destroy(city $city)
     {
         //
+
+        $isDeleted = $city->delete();
+        return redirect()->back();
     }
 }

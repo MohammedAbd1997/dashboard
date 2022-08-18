@@ -59,9 +59,14 @@
                   <a href="{{route('cities.edit',[$city->id])}}" class="btn btn-info">
                     <i class="fas fa-edit"></i>
                   </a>
-                  <button type="button" class="btn btn-danger">
+
+                  <form method="POST" action="{{route('cities.destroy',$city->id)}}">
+                    @csrf
+                    @method('DELETE')
+                  <button type="submit" class="btn btn-danger">
                     <i class="fas fa-trash"></i>
                   </button>
+                </form>
                 </div></td>
               </tr>
                @endforeach

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CityController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,4 +26,7 @@ Route::prefix('/cms/Admin')->group(function(){
     Route::view('/index','cms.temp.index');
     Route::view('/create','cms.temp.create');
     Route::resource('cities',CityController::class);
+    Route::resource('categories',CategoryController::class);
 });
+
+
